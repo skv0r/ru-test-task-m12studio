@@ -15,7 +15,7 @@ html {
 }
 
 body {
-    font-family: Arial,  sans-serif;
+    font-family: 'Golos Text', Arial,  sans-serif;
     background-color: black;
     color: white;
 }
@@ -82,17 +82,30 @@ h1, p {
 /* footer  */
 
 .footer {
+    position: relative;
     text-align: center;
+}
+
+.container--footer::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1210px;
+    height: 2px;
+    background-color: white;
+    z-index: 0;
 }
 
 .footer__button {
     position: relative;
     display: inline-block;
-    width: 292px;
     padding: 24px 48px;
     font-size: 24px;
     font-weight: 400;
     line-height: 32px;
+    z-index: 1;
 
     clip-path: polygon(
         var(--x) 0,
