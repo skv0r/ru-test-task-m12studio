@@ -1,0 +1,107 @@
+:root {
+    --value: 1;
+    --btn-height: 80;
+    --x: 24px;
+    --y: 40px;
+
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,  *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Arial,  sans-serif;
+    background-color: black;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, p {
+    margin: 0;
+}
+
+.page {
+    padding: 165px 0;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1920px;
+    padding: 0 48px;
+}
+
+.button {
+    color: black;
+    background-color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* header */
+
+.header {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.header__title {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.25;
+    opacity: 0.5;
+}
+
+/* main */
+
+.main {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.main__paragraph {
+    font-size: 120px;
+    font-weight: 400;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+}
+
+/* footer  */
+
+.footer {
+    text-align: center;
+}
+
+.footer__button {
+    position: relative;
+    display: inline-block;
+    width: 292px;
+    padding: 24px 48px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+
+    clip-path: polygon(
+        var(--x) 0,
+        calc(100% - var(--x)) 0,
+        100% var(--y),
+        100% calc(100% - var(--y)),
+        calc(100% - var(--x)) 100%,
+        var(--x) 100%,
+        0 calc(100% - var(--y)),
+        0 var(--y)
+    );
+}
